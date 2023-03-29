@@ -1,11 +1,11 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Button from "./Button";
+import Button from "../../components/Button";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Basic/Button",
+  title: "Input/Button",
   component: Button,
 } as ComponentMeta<typeof Button>;
 
@@ -32,6 +32,6 @@ BlueButton.args = {
 
 export const DisabledButton = Template.bind({});
 DisabledButton.args = {
-  label: "Disabled button",
+  label: "Test button",
   disabled: true,
 };
